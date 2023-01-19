@@ -86,7 +86,6 @@ def start_web_interface():
 
     eel_init()
     # root.destroy()
-    # loop = asyncio.get_event_loop()
     # loop.run_until_complete(asyncio.wait(futures))
 
 
