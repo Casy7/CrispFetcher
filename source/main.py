@@ -5,19 +5,16 @@ from sys import platform
 if platform in ("linux", "linux2", "darwin"):
     os.system('python3 -m pip install eel')
     os.system('python3 -m pip install tk')
-    # os.system('python -m pip install asyncio')
     
 elif platform == "win32":
     os.system('python -m pip install eel')
     os.system('python -m pip install tk')
-    # os.system('python -m pip install asyncio')
 
 
 from tkinter.filedialog import askopenfilename
 import tkinter as tk
 from tkinter import ttk
 from parser.crispfetcher import *
-# import asyncio
 
 root = tk.Tk()
 root.geometry("530x140")
@@ -46,16 +43,11 @@ def open_old_xml_file():
     filename = askopenfilename()
     oldFile.set(filename)    
     print(filename)
-    # eel_init()
 
 def open_new_xml_file():
     filename = askopenfilename()
     newFile.set(filename)
     print(filename)
-    # loop = asyncio.get_event_loop()
-    # eel_init()
-    # loop.run_forever()
-    # loop.close()
 
 
 
@@ -85,9 +77,6 @@ def start_web_interface():
     xml_file.generate()
 
     eel_init()
-    # root.destroy()
-    # loop = asyncio.get_event_loop()
-    # loop.run_until_complete(asyncio.wait(futures))
 
 
 def root_show():
