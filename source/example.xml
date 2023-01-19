@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+​
+​
+<scene  game_type="list" baseScore="11000" itemScore="1000"  width="3824" height="1536"
+       name="Admin"
+       max_items = "7"
+       items_to_find="7"
+       drawInactive="1"
+       auto_welldone="no"
+       replay_mode="random"
+       scrolling="on,fill">
+     
+       
+    <vars
+        message="message_admin_fv"
+        item="Admin/syringe_end.png">
+        
+    </vars>
+    
+    <items>
+​
+                
+        <item type="latent" class="script" actionId="item_show" overlay="yes">
+           <name>show_item_find</name>
+           <image path="../ItemShowScript.xml"></image>
+           <rect x="0" y="0"></rect>
+        </item>
+        
+​
+        
+        
+<!--Scene items-->
+        <item type="passive">
+            <name>1</name>
+            <image path="1.png"></image>
+            <rect x="834" y="302" width="3005" height="1234" ></rect>
+        </item>
+        
+        <item type="passive">
+            <name>dreamcatcher</name>
+            <image path="dreamcatcher.png"></image>
+            <rect x="1069" y="132" width="197" height="288" ></rect>
+        </item>
+        
+        <item type="active">
+            <name>mouse</name>
+            <image path="mouse.png"></image>
+            <rect x="1538" y="1183" width="236" height="108" ></rect>
+            <pick_order value="2"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>medal</name>
+            <image path="medal.png"></image>
+            <rect x="3502" y="314" width="57" height="175" ></rect>
+            <pick_order value="2"></pick_order>
+        </item>
+        
+        <item type="active" alpha="0.75">
+            <name>8</name>
+            <image path="number_8.png"></image>
+            <rect x="3242" y="996" width="92" height="111" ></rect>
+            <pick_order value="1"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>butterfly</name>
+            <image path="batterfly.png"></image>
+            <rect x="1795" y="114" width="110" height="98" ></rect>
+            <pick_order value="1"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>toy soldier</name>
+            <image path="toy_soldier.png"></image>
+            <rect x="3388" y="758" width="61" height="133" ></rect>
+            <pick_order value="1"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>car</name>
+            <image path="car.png"></image>
+            <rect x="2331" y="457" width="102" height="66" ></rect>
+            <pick_order value="2"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>pineapple</name>
+            <image path="pineapple.png"></image>
+            <rect x="2967" y="1206" width="86" height="153" ></rect>
+            <pick_order value="3"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>starfish</name>
+            <image path="starfish.png"></image>
+            <rect x="2777" y="420" width="57" height="52" ></rect>
+            <pick_order value="2"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>toothbrush</name>
+            <image path="toothbrush.png"></image>
+            <rect x="2844" y="945" width="149" height="21" ></rect>
+            <pick_order value="3"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>snail</name>
+            <image path="snail.png"></image>
+            <rect x="2180" y="1010" width="84" height="68" ></rect>
+            <pick_order value="3"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>jug</name>
+            <image path="jug.png"></image>
+            <rect x="3539" y="785" width="95" height="147" ></rect>
+            <pick_order value="1"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>rook</name>
+            <image path="rook.png"></image>
+            <rect x="3161" y="1203" width="58" height="112" ></rect>
+            <pick_order value="3"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>crown</name>
+            <image path="crown.png"></image>
+            <rect x="2531" y="682" width="88" height="111" ></rect>
+            <pick_order value="3"></pick_order>
+        </item>
+        
+        <item type="passive">
+            <name>2</name>
+            <image path="2.png"></image>
+            <rect x="233" y="725" width="3607" height="811" ></rect>
+        </item>
+        
+        <item type="active">
+            <name>ball</name>
+            <image path="ball.png"></image>
+            <rect x="3431" y="1180" width="130" height="129" ></rect>
+            <pick_order value="2"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>mask</name>
+            <image path="mask.png"></image>
+            <rect x="1782" y="314" width="77" height="130" ></rect>
+            <pick_order value="1"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>camera</name>
+            <image path="camera.png"></image>
+            <rect x="2345" y="1209" width="188" height="156" ></rect>
+            <pick_order value="1"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>ruler</name>
+            <image path="ruler.png"></image>
+            <rect x="273" y="533" width="216" height="41" ></rect>
+            <pick_order value="3"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>rifle</name>
+            <image path="rifle.png"></image>
+            <rect x="365" y="1173" width="881" height="116" ></rect>
+            <pick_order value="1"></pick_order>
+        </item>
+        
+        <item type="passive">
+            <name>3</name>
+            <image path="3.png"></image>
+            <rect x="0" y="0" width="3840" height="1536" ></rect>
+        </item>
+        
+        <item type="active">
+            <name>kerosene lamp</name>
+            <image path="kerosene_lamp.png"></image>
+            <rect x="3641" y="225" width="69" height="149" ></rect>
+            <pick_order value="3"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>microphone</name>
+            <image path="microphone.png"></image>
+            <rect x="1856" y="679" width="65" height="130" ></rect>
+            <pick_order value="1"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>pine cone</name>
+            <image path="pine_cone.png"></image>
+            <rect x="3449" y="665" width="55" height="62" ></rect>
+            <pick_order value="2"></pick_order>
+        </item>
+        <!--
+        <item type="active">
+            <name>mug of beer</name>
+            <image path="mug_of_beer.png"></image>
+            <rect x="3726" y="261" width="73" height="81" ></rect>
+            <pick_order value="2"></pick_order>
+        </item>
+        -->
+        <item type="active">
+            <name>snake</name>
+            <image path="snake.png"></image>
+            <rect x="991" y="884" width="251" height="67" ></rect>
+            <pick_order value="2"></pick_order>
+        </item>
+        
+        <item type="active" actionId="syringe" repoId="repo_syringe">
+            <name>syringe</name>
+            <image path="syringe.png"></image>
+            <rect x="256" y="937" width="173" height="156" ></rect>
+            <pick_order value="r:rp_Admin_sv"></pick_order>
+        </item>
+        
+        <item type="passive">
+            <name>4</name>
+            <image path="4.png"></image>
+            <rect x="0" y="0" width="3837" height="1536" ></rect>
+        </item>
+        
+        
+        <item type="active">
+            <name>gift box</name>
+            <image path="gift_box.png"></image>
+            <rect x="1341" y="745" width="107" height="79" ></rect>
+            <pick_order value="2"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>garlic</name>
+            <image path="garlic.png"></image>
+            <rect x="2673" y="183" width="71" height="209" ></rect>
+            <pick_order value="3"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>sack</name>
+            <image path="sack.png"></image>
+            <rect x="702" y="977" width="208" height="202" ></rect>
+            <pick_order value="2"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>sock</name>
+            <image path="sock.png"></image>
+            <rect x="1769" y="1191" width="174" height="68" ></rect>
+            <pick_order value="2"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>violin</name>
+            <image path="violin.png"></image>
+            <rect x="441" y="9" width="346" height="191" ></rect>
+            <pick_order value="1"></pick_order>
+        </item>
+        
+        <item type="active">
+            <name>seagull</name>
+            <image path="gull.png"></image>
+            <rect x="847" y="692" width="149" height="97" ></rect>
+        </item>
+        
+        <item type="passive">
+            <name>background</name>
+            <image path="background.jpg"></image>
+            <rect x="0" y="0" width="3840" height="1536" ></rect>
+        </item>
+​
+    </items>
+    
+</scene>
+​

@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Python: CrispMerge",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Firefox: CrispMerge",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "url": "http://localhost:8000/editor.html",
+            "webRoot": "${workspaceFolder}/web",
+            "pathMappings": [
+                {
+                    "url": "http://localhost:8000/js/editor.js",
+                    "path": "${workspaceFolder}/web/js/editor.js"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CrispMerge</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="/images/logo.svg">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/editor.css">
+    <script src="./js/jquery.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('div').scroll(function () {
+                $('div[id$=oldXML]').scrollTop($(this).scrollTop());
+                $('div[id$=newXML]').scrollTop($(this).scrollTop());
+                $('div[id$=resXML]').scrollTop($(this).scrollTop());
+            });
+
+            $('textarea').toArray().forEach(auto_grow);           
+        });
+    </script>
+</head>
+
+<body lang="en-US" class="body-container" onload="update_xmls()">
+    <div class="navbar">
+        <img class="logo" src="/images/logo.svg">
+        <h1>
+            Crisp
+        </h1>   <h1 class="outline">Merge</h1>     
+        <img class="logo fnButton" src="/images/copy.svg" onclick="copy_result()">
+    </div>
+    <div class="mainWindow">
+        <div class="rowLineControl">
+            <div class="lineSystemCol lineNumberBox">
+                <div class="code-field-header">
+                    <label for="line_number">Line</label>
+                </div>
+
+                <div id="oldXMLLineNumberCol" class="container-fluid xml-code-field lineNumberCol">
+                </div>
+
+            </div>
+
+            <div class="flexCol">
+                <div class="code-field-header old-XML-header">
+                    <label for="form7">Old</label>
+                </div>
+
+                <div class="rowLineControl">
+                    <div id="oldXML" class="container-fluid xml-code-field maxFill">
+                    </div>
+                    <div id="move_group_from_old" class="container-fluid xml-code-field moveButtonsCol moveGoupBtnsCol">
+                    </div>
+                    <div id="move_from_old" class="container-fluid xml-code-field moveButtonsCol">
+                    </div>
+                </div>
+            </div>
+
+            <div class="lineSystemCol lineNumberBox">
+                <div class="code-field-header">
+                    <label for="line_number">Line</label>
+                </div>
+
+                <div id="newXMLLineNumberCol" class="container-fluid xml-code-field lineNumberCol">
+                </div>
+
+            </div>
+
+            <div class="flexCol">
+                <div class="code-field-header new-XML-header">
+                    <label for="form7">New</label>
+                </div>
+
+                <div class="rowLineControl">
+                    <div id="newXML" class="container-fluid xml-code-field maxFill">
+                    </div>
+                    <div id="move_group_from_new" class="container-fluid xml-code-field moveButtonsCol moveGoupBtnsCol">
+                    </div>
+                    <div id="move_from_new" class="container-fluid xml-code-field moveButtonsCol">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flexCol">
+                <div class="code-field-header result-XML-header">
+                    <label for="form7">Result</label>
+                </div>
+                <div class="rowLineControl">
+                    <div id="resXML" class="container-fluid xml-code-field maxFill">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn" onclick="move_to_top()">↑ Up ↑</button>
+
+
+
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="./js/editor.js"></script>
+    <script type="text/javascript" src="../eel.js"></script>
+</body>
+
+</html>
